@@ -1030,6 +1030,10 @@ select {
   width: 100%;
 }
 
+.link{
+  border-bottom: 0px;
+}  
+
 /* line 69, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
 [class*="block-grid-"] {
   display: block;
