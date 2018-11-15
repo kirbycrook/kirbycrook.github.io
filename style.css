@@ -1352,3 +1352,16 @@ nav[role="navigation"] {
     }
 
 }
+
+div.site-container{
+    background-color: #fafafa;
+}
+
+section.site-content{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+div.image{
+    margin: 20px;
+}

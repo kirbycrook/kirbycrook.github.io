@@ -75,13 +75,35 @@
                 <div class="project-assets">
                     <div class="image">
                         <div data-picture>
-                            <div data-src="img/prod desktop.jpg"></div>
-                            <div data-src="img/prod desktop.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
+                            <div data-src="img/product desktop.jpg"></div>
+                            <div data-src="img/product desktop.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
                             <!--[if (lt IE 9) & (!IEMobile)]>
                                 <div data-src="img/jokula board.png"></div>
                             <![endif]-->
                             <noscript>
-                                <img src="img/prod desktop.jpg" alt="" />
+                                <img src="img/product desktop.jpg" alt="" />
+                            </noscript>
+                        </div>
+                    </div>
+                    <div class="two-column">
+                        <div data-picture class="column">
+                            <div data-src="img/cart desktop1.jpg"></div>
+                            <div data-src="img/cart desktop1.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
+                            <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/jokula db.png"></div>
+                            <![endif]-->
+                            <noscript>
+                                <img src="img/cart desktop1.jpg" alt="" />
+                            </noscript>
+                        </div>
+                        <div data-picture class="column bot">
+                            <div data-src="img/mobile screens.jpg"></div>
+                            <div data-src="img/mobile screens.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
+                            <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/jokula db.png"></div>
+                            <![endif]-->
+                            <noscript>
+                                <img src="img/mobile screens.jpg" alt="" />
                             </noscript>
                         </div>
                     </div>
@@ -101,40 +123,71 @@
 <script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
                     <div class="image">
                         <div data-picture>
-                            <div data-src="img/desktop productt.jpg"></div>
-                            <div data-src="img/desktop productt.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
+                            <div data-src="img/mobile-product.jpg"></div>
+                            <div data-src="img/mobile-product.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
                             <!--[if (lt IE 9) & (!IEMobile)]>
                                 <div data-src="img/jokula db.png"></div>
                             <![endif]-->
                             <noscript>
-                                <img src="img/desktop productt.jpg" alt="" />
+                                <img src="img/mobile-product.jpg" alt="" />
                             </noscript>
                         </div>
                     </div>
+                    <div class="image main notSelectable" id="ba-one" style="height: 20vh;">
+                        <p>touch to swap</p>
+                    </div> 
+                    <style>
+                        div.main{
+                            background-image: url('img/mobile screens.jpg')
+                        }
+                        div.main:hover{
+                            background-image: url('img/cart desktop1.jpg')
+                        }
+
+                        div.main:active{
+                            background-image: url('img/cart desktop1.jpg')
+
+                        }
+                    </style>
+                    <script>
+                        // Simply choose any element and apply the .disableSelection(); method to disable text selection.
+                        $(document).ready(function(){
+
+                           $('.notSelectable').disableSelection();
+                            
+                        });
+
+
+
+                        // This jQuery Plugin will disable text selection for Android and iOS devices.
+                        // Stackoverflow Answer: http://stackoverflow.com/a/2723677/1195891
+                        $.fn.extend({
+                            disableSelection: function() {
+                                this.each(function() {
+                                    this.onselectstart = function() {
+                                        return false;
+                                    };
+                                    this.unselectable = "on";
+                                    $(this).css('-moz-user-select', 'none');
+                                    $(this).css('-webkit-user-select', 'none');
+                                });
+                            }
+                        });
+                    </script>
+                  
+                    <!-- Slider -->
                     <div class="image">
-                        <div data-picture>
-                            <div data-src="img/mobile screens.jpg"></div>
-                            <div data-src="img/mobile screens.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/jokula db.png"></div>
-                            <![endif]-->
-                            <noscript>
-                                <img src="img/mobile screens.jpg" alt="" />
-                            </noscript>
+                        <div>
+                            <div id="comparison">
+                                  <figure>
+                                    <div id="divisor"></div>
+                                  </figure>
+                                  <input type="range" min="0" max="100" value="50" id="slider" oninput="moveDivisor()">
+                                </div>
                         </div>
-                    </div>
-                    <div class="image">
-                        <div data-picture>
-                            <div data-src="img/cart desktop1.jpg"></div>
-                            <div data-src="img/cart desktop1.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/jokula db.png"></div>
-                            <![endif]-->
-                            <noscript>
-                                <img src="img/cart desktop1.jpg" alt="" />
-                            </noscript>
-                        </div>
-                    </div>   
+                    
+                    </div> 
+                    <!-- End Slider -->  
                     <div class="image">
                         <div data-picture>
                             <div data-src="img/desktop screens.jpg"></div>
@@ -147,20 +200,8 @@
                             </noscript>
                         </div>
                     </div> 
-                    <div class="image">
-                        <div data-picture>
-                            <div data-src="img/icons.jpg"></div>
-                            <div data-src="img/icons.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
-                            <!--[if (lt IE 9) & (!IEMobile)]>
-                                <div data-src="img/jokula db.png"></div>
-                            <![endif]-->
-                            <noscript>
-                                <img src="img/icons.jpg" alt="" />
-                            </noscript>
-                        </div>
-                    </div> 
-                    <div class="image">
-                        <div data-picture>
+                    <div class="two-column">
+                        <div data-picture class="column">
                             <div data-src="img/ads.jpg"></div>
                             <div data-src="img/ads.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
                             <!--[if (lt IE 9) & (!IEMobile)]>
@@ -170,14 +211,22 @@
                                 <img src="img/ads.jpg" alt="" />
                             </noscript>
                         </div>
-                    </div>    
+                        <div data-picture class="column bot">
+                            <div data-src="img/icons.jpg"></div>
+                            <div data-src="img/icons.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
+                            <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/jokula db.png"></div>
+                            <![endif]-->
+                            <noscript>
+                                <img src="img/icons.jpg" alt="" />
+                            </noscript>
+                        </div>
+                    </div>     
                 </div>         
             </article>
    
         <!--END .site-content-->
         </section>
-
-
  
         <nav role="navigation">
             <ul class="cd-pagination animated-buttons custom-icons">
@@ -196,6 +245,143 @@
 
     <!--END .site-container-->
     </div>
+
+    <style>
+        div#comparison { 
+          height: 45vw;
+          max-width: 100%;
+          max-height: 1200px;
+          overflow: hidden; 
+      }
+
+        div#comparison figure { 
+          background-image: url('img/new-shop.jpg'); 
+          background-size: cover;
+          position: relative;
+          font-size: 0;
+          width: 100%; 
+          height: 100%;
+          margin: 0; 
+        }
+        div#comparison figure > img { 
+          position: relative;
+          width: 100%;
+        }
+        div#comparison figure div { 
+          background-image: url('img/old-shop.jpg');
+          background-size: cover;
+          position: absolute;
+          width: 50%; 
+          box-shadow: 0 5px 10px -2px rgba(0,0,0,0.3);
+          overflow: hidden;
+          bottom: 0;
+          height: 100%;
+        }
+
+        input[type=range]{
+          -webkit-appearance:none;
+          -moz-appearance:none;
+          position: relative;
+          top: -20vh;
+          left: -1.2%;
+          background-color: rgba(132,162,191,0);
+          width: 102%; 
+        }
+        input[type=range]:focus { 
+          outline: none; 
+        }
+        input[type=range]:active { 
+          outline: none;  
+        }
+
+        input[type=range]::-moz-range-track { 
+          -moz-appearance:none;
+            height:15px;
+            width: 98%;
+            background-color: rgba(132,162,191,0); 
+            position: relative;
+            outline: none;    
+         }
+        input[type=range]::active { 
+          border: none; 
+          outline: none;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance:none;
+            width: 40px; 
+            height: 40px;   
+            background: #093255;
+            background-image: url('img/slide.svg');
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 20px;
+           }
+        input[type=range]::-moz-range-thumb {
+          -moz-appearance: none;
+          width: 25px;
+          height: 25px;
+          background: #fff;
+          border-radius: 20px;
+             }   
+        input[type=range]:focus::-webkit-slider-thumb {
+            background: #093255;
+            width: 40px; 
+            height: 40px;   
+            background-image: url('img/slide.svg');
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+           }
+        input[type=range]:focus::-moz-range-thumb {
+            width: 40px; 
+            height: 40px;   
+            background: #093255);
+            background-image: url('img/slide.svg');
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center;
+           }
+
+           div.image{
+            margin: 20px;
+           }
+
+    </style>
+
+    <script>
+        var divisor = document.getElementById("divisor"),
+        slider = document.getElementById("slider");
+        function moveDivisor() { 
+            divisor.style.width = slider.value+"%";
+        }
+    </script>
+
+
+        <style>
+            div.two-column{
+                display: flex;
+                margin: 20px;
+                justify-content: space-between;
+            }
+            div.column{
+                width: 49%;
+            }
+
+            @media(max-width: 900px){
+               div.two-column{
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+                div.column{
+                    width: 100%;
+                } 
+                div.column.bot{
+                    margin-top: 20px;
+                }
+            }
+
+        </style>
 
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/jquery.fitvids.js"></script>
