@@ -35,7 +35,6 @@
                 <nav>
                     <ul class="cd-primary-nav">
                         <li><a href="index.html" class="selected">Portfolio</a></li>
-                        <li><a href="process.html">Process</a></li>
                     </ul>
                 </nav>
             </div><!-- .cd-half-block -->
@@ -133,47 +132,6 @@
                             </noscript>
                         </div>
                     </div>
-                    <div class="image main notSelectable" id="ba-one" style="height: 20vh;">
-                        <p>touch to swap</p>
-                    </div> 
-                    <style>
-                        div.main{
-                            background-image: url('img/mobile screens.jpg')
-                        }
-                        div.main:hover{
-                            background-image: url('img/cart desktop1.jpg')
-                        }
-
-                        div.main:active{
-                            background-image: url('img/cart desktop1.jpg')
-
-                        }
-                    </style>
-                    <script>
-                        // Simply choose any element and apply the .disableSelection(); method to disable text selection.
-                        $(document).ready(function(){
-
-                           $('.notSelectable').disableSelection();
-                            
-                        });
-
-
-
-                        // This jQuery Plugin will disable text selection for Android and iOS devices.
-                        // Stackoverflow Answer: http://stackoverflow.com/a/2723677/1195891
-                        $.fn.extend({
-                            disableSelection: function() {
-                                this.each(function() {
-                                    this.onselectstart = function() {
-                                        return false;
-                                    };
-                                    this.unselectable = "on";
-                                    $(this).css('-moz-user-select', 'none');
-                                    $(this).css('-webkit-user-select', 'none');
-                                });
-                            }
-                        });
-                    </script>
                   
                     <!-- Slider -->
                     <div class="image">
@@ -197,6 +155,28 @@
                             <![endif]-->
                             <noscript>
                                 <img src="img/desktop screens.jpg" alt="" />
+                            </noscript>
+                        </div>
+                    </div> 
+                    <div class="two-column">
+                        <div data-picture class="column">
+                            <div data-src="img/ads.jpg"></div>
+                            <div data-src="img/ads.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
+                            <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/jokula db.png"></div>
+                            <![endif]-->
+                            <noscript>
+                                <img src="img/ads.jpg" alt="" />
+                            </noscript>
+                        </div>
+                        <div data-picture class="column bot">
+                            <div data-src="img/icons.jpg"></div>
+                            <div data-src="img/icons.jpg" data-media="(-webkit-min-device-pixel-ratio: 2),(min--moz-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx)"></div>
+                            <!--[if (lt IE 9) & (!IEMobile)]>
+                                <div data-src="img/jokula db.png"></div>
+                            <![endif]-->
+                            <noscript>
+                                <img src="img/icons.jpg" alt="" />
                             </noscript>
                         </div>
                     </div> 
@@ -245,6 +225,48 @@
 
     <!--END .site-container-->
     </div>
+
+                        <div class="image main notSelectable" id="ba-one" style="height: 20vh;">
+                        <p>touch to swap</p>
+                    </div> 
+    <style>
+        div.main{
+            background-image: url('img/mobile screens.jpg')
+        }
+        div.main:hover{
+            background-image: url('img/cart desktop1.jpg')
+        }
+
+        div.main:active{
+            background-image: url('img/cart desktop1.jpg')
+
+        }
+    </style>
+    <script>
+        // Simply choose any element and apply the .disableSelection(); method to disable text selection.
+        $(document).ready(function(){
+
+           $('.notSelectable').disableSelection();
+            
+        });
+
+
+
+        // This jQuery Plugin will disable text selection for Android and iOS devices.
+        // Stackoverflow Answer: http://stackoverflow.com/a/2723677/1195891
+        $.fn.extend({
+            disableSelection: function() {
+                this.each(function() {
+                    this.onselectstart = function() {
+                        return false;
+                    };
+                    this.unselectable = "on";
+                    $(this).css('-moz-user-select', 'none');
+                    $(this).css('-webkit-user-select', 'none');
+                });
+            }
+        });
+    </script>
 
     <style>
         div#comparison { 
