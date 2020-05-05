@@ -608,15 +608,6 @@ pre {
     text-transform: uppercase;
 }
 
-@media(max-width: 900px){
-   .thumbnail-title{
-    font-size: 18px; 
-   }
-    
-   .thumbnail-description{
-    font-size: 13px; 
-   }
-}
 /*===== Project Assets =====*/
 .thumb img {
     width: 100%;
@@ -1361,6 +1352,17 @@ nav[role="navigation"] {
         font-size: 1rem;
     }
 
+}
+
+
+@media(max-width: 900px){
+   .thumbnail-title{
+    font-size: 18px; 
+   }
+    
+   .thumbnail-description{
+    font-size: 13px; 
+   }
 }
 
 div.site-container{
