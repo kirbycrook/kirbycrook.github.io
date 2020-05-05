@@ -607,6 +607,16 @@ pre {
     width: 75%;
     text-transform: uppercase;
 }
+
+@media(max-width: 900px){
+   .thumbnail-title{
+    font-size: 18px; 
+   }
+    
+   .thumbnail-description{
+    font-size: 13px; 
+   }
+}
 /*===== Project Assets =====*/
 .thumb img {
     width: 100%;
