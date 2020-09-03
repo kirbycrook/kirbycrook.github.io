@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+    <meta charset="UTF-8">
+    <title>Kirby Crook - Roma Boots</title>
+  <meta name="keywords" content="Roma Boots, CRO, Web Design">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  </head>
+  <body style="margin: 0 !important;">
+  <div class="projects-margin">
+    <header>
+      <div class="top-navigation">
+        <div class="logo">
+          <a href="http://kirbycrook.com/index.html"><p class="site-logo">kirby crook</p></a>
+        </div>
+        <nav id="navbar" class="navigation">
+          <ul>
+            <li class="nav-list"><a class="nav-option" href="http://kirbycrook.com/index.html#work">Work</a></li>
+            <li class="nav-list"><a class="nav-option" href="http://kirbycrook.com/index.html#about">About</a></li>
+            <li class="nav-list"><a class="nav-option" href="http://kirbycrook.com/index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <div class="main project-page">
+        <h1 style="display: inline-block;" class="subtitle article-title">Roma Boots</h1>
+          <a class="no-style" target="_blank" href="https://www.romaboots.com"><img alt="view website" class="link" src="images/link.svg"></a> 
+        <div class="article-overview">
+          <div class="article-details">
+            <p class="paragraph">Initially, I started working with Roma Boots on converison rate optimization and A/B testing. Using the data and insights from the initial tests, I did a full redesign of the website and helped establish a more cohesive brand feel with a style guide. I worked with a development agency to bring the project to completion. 
+            </p>
+          </div>
+          <div class="article-scope">
+            <div class="scope-bullet">
+                <div class="bullet">
+                </div>
+                <p class="scope-text">CRO &amp; A/B Testing</p>
+            </div>
+            <div class="scope-bullet">
+                <div class="bullet">
+                </div>
+                <p class="scope-text">UX/UI Design</p>
+            </div>
+            <div class="scope-bullet">
+                <div class="bullet">
+                </div>
+                <p class="scope-text">Shopify Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main article-body">
+        <img alt="Roma Boots Homepage Mobile" class="article-img" src="images/roma/rb-mobile-home.jpg">
+        <img alt="Roma Boots Homepage Desktop" class="article-img" src="images/roma/rb-desktop-home.jpg">
+        <img alt="Product Page Mobile" class="article-img" src="images/roma/rb-mobile-prod.jpg">
+        <img alt="Product Page Desktop" class="article-img" src="images/roma/rb-desktop-product.jpg">
+        <img alt="Roma Boots Collection Page" class="article-img" src="images/roma/rb-coll.jpg">
+      </div>
+  </div>
+  <div class="main">
+    <p class="subtitle more-work">Explore More</p>
+  </div>
+    <div class="carousel">
+      <div class="grid-box view-more first-project">
+        <a class="no-style" href="loveyourmelon.html">
+          <img alt="" class="thumbnail" src="images/lym-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">Website, Digital Marketing</p>
+          <h3 class="project-title">Love Your Melon</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="mate.html">
+          <img alt="" class="thumbnail" src="images/mate-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">CRO, Digital Marketing</p>
+          <h3 class="project-title">MATE the Label</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="skapa.html">
+          <img alt="" class="thumbnail" src="images/skapa-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">Website, Branding</p>
+          <h3 class="project-title">Skapa Prints</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="spilarinn.html">
+          <img alt="" class="thumbnail" src="images/spilarinn-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">App</p>
+          <h3 class="project-title">Spilarinn</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="1819.html">
+          <img alt="" class="thumbnail" src="images/1819-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">Website, App</p>
+          <h3 class="project-title">1819</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more last-project">
+        <a class="no-style" href="starchup.html">
+          <img alt="" class="thumbnail" src="images/starchup-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">App, Graphic Design</p>
+          <h3 class="project-title">Starchup</h3>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      var left = $(".top-navigation").offset().left;
+      console.log(left)
+
+      $(".first-project").css("margin-left",left)
+    </script>
+
+    <script>
+var nav = $('nav');
+var line = $('<div />').addClass('line');
+
+line.appendTo(nav);
+
+var active = nav.find('.active');
+var pos = 0;
+var wid = 0;
+
+if(active.length) {
+  pos = active.position().left;
+  wid = active.width();
+  line.css({
+    left: pos,
+    width: wid
+  });
+}
+
+nav.find('ul li a').click(function(e) {
+  e.preventDefault();
+  if(!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+    
+    nav.addClass('animate');
+
+    var _this = $(this);
+
+    nav.find('ul li').removeClass('active');
+
+    var position = _this.parent().position();
+    var width = _this.parent().width();
+
+    if(position.left >= pos) {
+      line.animate({
+        width: ((position.left - pos) + width)
+      }, 300, function() {
+        line.animate({
+          width: width,
+          left: position.left
+        }, 150, function() {
+          nav.removeClass('animate');
+        });
+        _this.parent().addClass('active');
+      });
+    } else {
+      line.animate({
+        left: position.left,
+        width: ((pos - position.left) + wid)
+      }, 300, function() {
+        line.animate({
+          width: width
+        }, 150, function() {
+          nav.removeClass('animate');
+        });
+        _this.parent().addClass('active');
+      });
+    }
+
+    pos = position.left;
+    wid = width;
+  }
+});
+  </script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+    <meta charset="UTF-8">
+    <title>Kirby Crook - Spilarinn</title>
+  <meta name="keywords" content="Spilarinn, UX Design">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  </head>
+  <body style="margin: 0 !important;">
+  <div class="projects-margin">
+    <header>
+      <div class="top-navigation">
+        <div class="logo">
+          <a href="http://kirbycrook.com/index.html"><p class="site-logo">kirby crook</p></a>
+        </div>
+        <nav id="navbar" class="navigation">
+          <ul>
+            <li class="nav-list"><a class="nav-option" href="http://kirbycrook.com/index.html#work">Work</a></li>
+            <li class="nav-list"><a class="nav-option" href="http://kirbycrook.com/index.html#about">About</a></li>
+            <li class="nav-list"><a class="nav-option" href="http://kirbycrook.com/index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <div class="main project-page">
+          <h1 style="display: inline-block;" class="subtitle article-title">Spilarinn</h1>
+          <a class="no-style" target="_blank" href="http://www.spilarinn.is/"><img alt="view website" class="link" src="images/link.svg"></a>         
+          <div class="article-overview">
+          <div class="article-details">
+            <p class="paragraph">Spilarinn is an app that plays Iceland's most popular radio stations, and was featured on the App store. As the UX designer, I was in charge of designing an easy-to-use interface.
+<br><br>
+Nearly half of cell phone users hold their phone with one hand, and more than two-thirds of those users are right handed. Taking this into consideration, I decided to place the radio station thumbnails below the scanner. The thumbnails are single clicks to get to a desired station, and are in the easiest field of use for single, right-handed phone users.
+            </p>
+          </div>
+          <div class="article-scope">
+            <div class="scope-bullet">
+                <div class="bullet">
+                </div>
+                <p class="scope-text">User Research</p>
+            </div>
+            <div class="scope-bullet">
+                <div class="bullet">
+                </div>
+                <p class="scope-text">UX Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main article-body">
+        <img alt="Spilarinn" class="article-img" src="images/spilarinn/newone.jpg">
+        <img alt="Spilarinn Advertisement" class="article-img" src="images/spilarinn/spilarinn-promote.png">
+        <img alt="Wireframe" class="article-img" src="images/spilarinn/spilarinn-wireframe.png">
+      </div>
+  </div>
+  <div class="main">
+    <p class="subtitle more-work">Explore More</p>
+  </div>
+    <div class="carousel">
+      <div class="grid-box view-more first-project">
+        <a class="no-style" href="loveyourmelon.html">
+          <img alt="" class="thumbnail" src="images/lym-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">Website, Digital Marketing</p>
+          <h3 class="project-title">Love Your Melon</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="mate.html">
+          <img alt="" class="thumbnail" src="images/mate-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">CRO, Digital Marketing</p>
+          <h3 class="project-title">MATE the Label</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="roma.html">
+          <img alt="" class="thumbnail" src="images/roma-article.jpg">
+          <div class="project-details roma">
+          <p class="project-scope">Website, CRO</p>
+          <h3 class="project-title">Roma Boots</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="skapa.html">
+          <img alt="" class="thumbnail" src="images/skapa-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">Website, Branding</p>
+          <h3 class="project-title">Skapa Prints</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more">
+        <a class="no-style" href="1819.html">
+          <img alt="" class="thumbnail" src="images/1819-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">Website, App</p>
+          <h3 class="project-title">1819</h3>
+        </div>
+        </a>
+      </div>
+      <div class="grid-box view-more last-project">
+        <a class="no-style" href="starchup.html">
+          <img alt="" class="thumbnail" src="images/starchup-article.jpg">
+          <div class="project-details">
+          <p class="project-scope">App, Graphic Design</p>
+          <h3 class="project-title">Starchup</h3>
+        </div>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      var left = $(".top-navigation").offset().left;
+      console.log(left)
+
+      $(".first-project").css("margin-left",left)
+    </script>
+
+    <script>
+var nav = $('nav');
+var line = $('<div />').addClass('line');
+
+line.appendTo(nav);
+
+var active = nav.find('.active');
+var pos = 0;
+var wid = 0;
+
+if(active.length) {
+  pos = active.position().left;
+  wid = active.width();
+  line.css({
+    left: pos,
+    width: wid
+  });
+}
+
+nav.find('ul li a').click(function(e) {
+  e.preventDefault();
+  if(!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+    
+    nav.addClass('animate');
+
+    var _this = $(this);
+
+    nav.find('ul li').removeClass('active');
+
+    var position = _this.parent().position();
+    var width = _this.parent().width();
+
+    if(position.left >= pos) {
+      line.animate({
+        width: ((position.left - pos) + width)
+      }, 300, function() {
+        line.animate({
+          width: width,
+          left: position.left
+        }, 150, function() {
+          nav.removeClass('animate');
+        });
+        _this.parent().addClass('active');
+      });
+    } else {
+      line.animate({
+        left: position.left,
+        width: ((pos - position.left) + wid)
+      }, 300, function() {
+        line.animate({
+          width: width
+        }, 150, function() {
+          nav.removeClass('animate');
+        });
+        _this.parent().addClass('active');
+      });
+    }
+
+    pos = position.left;
+    wid = width;
+  }
+});
+  </script>
+  </body>
+</html>
