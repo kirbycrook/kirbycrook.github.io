@@ -20,6 +20,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="HandheldFriendly" content="true">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
 <!-- Google Tag Manager (noscript) -->
@@ -29,11 +34,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <header>
       <div class="top-navigation">
         <div class="logo">
-          <a href="http://kirbycrook.com/index.html"><p class="site-logo">kirby crook</p></a>
+          <a href="http://kirbycrook.com/index.html"><img class="site-logo" src="images/kc-logo.svg"></a>
         </div>
         <nav id="navbar" class="navigation">
           <ul>
             <li class="nav-list"><a class="nav-option" name="work" href="#work">Work</a></li>
+            <li class="nav-list"><a class="nav-option" name="thoughts" href="#thoughts">Articles</a></li>
+            <li class="nav-list"><a class="nav-option" target="_blank" name="videos" href="https://youtube.com/playlist?list=PLpjwMOKO8Jz4v6UgFc59c5EJlQoiL1jsI">Videos</a></li>
             <li class="nav-list"><a name="about" class="nav-option" href="#about">About</a></li>
             <li class="nav-list"><a name="contact" class="nav-option" href="#contact">Contact</a></li>
           </ul>
@@ -43,12 +50,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="main">
       <div class="welcome-message">
-        <h1>Hi, my name is Kirby Crook. I’m a UX designer & digital marketer specializing in e-commerce.</h1>
+        <h1>Hi, my name is Kirby Crook. I'm a CRO Strategist at Elevar, driving growth for e-commerce brands like</h1>
+        <!--<a class="button filled"  href="">See Work</a><a  class="button" href="">Read Some Thoughts</a>-->
       </div>
+      <!--<div class="brand-work">
+        <h3 class="sub">Companies I've worked with</h3>
+      </div>-->
+      <div class="carousel-outer">
+         <div class="carousel-logos">
+
+          <div class="col-carousel">
+              <img src="images/liv.svg" class="brand-logo">
+          </div>
+          <div class="col-carousel">
+             <img src="images/soludos.svg" class="brand-logo">
+          </div>
+          <div class="col-carousel">
+              <img src="images/raycon.svg" class="brand-logo">
+          </div>
+          <div class="col-carousel">
+              <img src="images/bearaby.svg" class="brand-logo">
+          </div>
+          <div class="col-carousel">
+              <img src="images/OO.png" class="brand-logo">
+          </div>
+          <div class="col-carousel">
+              <img src="images/vessi.svg" class="brand-logo">
+          </div>
+          <div class="col-carousel">
+              <img src="images/owl-labs.svg" class="brand-logo">
+          </div>
+          <div class="col-carousel" >
+              <img src="images/MS.png" class="brand-logo">
+          </div>
+       </div>
+     </div>
+
+
+
        <div style="position: relative;">
          <div id="work"></div>
        </div>
       <div class="main-grid">
+        <h3 class="sub works-sub">Selected works</h3>
         <div class="full">
             <div class="grid-box sixty-five">
               <a class="no-style" href="loveyourmelon.html">
@@ -121,6 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
         </div>
       </div>
+    
     </div>
 
     <footer class="main">
@@ -129,6 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div style="position: relative;">
             <div id="about"></div>
           </div>
+          <h3 class="sub" style="margin-bottom: 0;">My background</h3>
           <h3 class="about">I started out in the tech space doing UX design for a startup and quickly moved into an agency setting. Since then, I’ve worked in e-commerce and have started to expand my skills in the digital marketing space. I love pairing my UX background with my passion for e-commerce and CRO to create experiences that are both user friendly and high-converting. 
           </h3>
           <div class="contact">
@@ -173,7 +219,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="footer-right">
           <h3 class="experiences">Experiences</h3>
           <div class="resume">
-            <p class="date">January 2019 - Present</p>
+            <p class="date">October 2020 - Present</p>
+            <p class="company">Lead CRO Strategist  /  Elevar</p>
+          </div>
+          <div class="resume">
+            <p class="date">January 2019 - October 2020</p>
             <p class="company">Digital Marketing Director  /  Love Your Melon</p>
           </div>
           <div class="resume">
@@ -191,6 +241,66 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </footer>
+<div id="thoughts" class="main">
+  <div class="articles">
+        <h3 class="sub" style="margin-bottom: -5px;">Articles</h3>
+        <div class="articles-inner">
+          <div class="article-card">
+            <p class="read-time project-scope">4 min read</p>
+            <h4  class="project-title">Running Multiple Concurrent Tests in Google Optimize</h4>
+            <p class="article-preview">A big question that comes up a lot has to do with running multiple tests at a time. While it’s not an out-of-the-box feature in Optimize, it is possible.</p>
+            <a href="multiple-tests.html" class="blog-link">Read Article</a>
+          </div>
+          <div class="article-card">
+            <p class="read-time project-scope">4 min read</p>
+            <h4  class="project-title">Optimizing Your Subscription Product Sales</h4>
+            <p class="article-preview">Subscription products rely on customers establishing a habit around the product. Without habit formation, a user is much more likely to fall back to using their previous solution.</p>
+            <a href="subscription.html" class="blog-link">Read Article</a>
+          </div>
+          <div class="article-card">
+            <p class="read-time project-scope">3 min read</p>
+            <h4  class="project-title">Increase Email Opt-Ins by 68%</h4>
+            <p class="article-preview">The current popup offer for this customer was for a percentage savings on a certain, non-core collection.</p>
+            <a href="email.html" class="blog-link">Read Article</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<script>
+$('.carousel-logos').slick({
+  centerMode: false,
+  arrows: false,
+  draggable: true,
+  dots: false,
+  centerPadding: '60px',
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 6,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+  
+</script>
   
     <script>
 var nav = $('nav');
