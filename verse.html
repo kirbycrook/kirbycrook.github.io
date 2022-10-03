@@ -41,7 +41,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="main">
       <div class="welcome-message">
         <h1>Hi, my name is Kirby Crook. I'm a CRO Strategist at Elevar, driving growth for e-commerce brands like</h1>
-        <div id="ourmanna-verse">Loading...</div>
+        <div id="ourmanna-verse"></div>
+        <h3 id="book"></h3>
       </div>
      
     </div>
@@ -52,6 +53,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   
    <script src="https://beta.ourmanna.com/api/v1/js/?order=random" type="text/javascript"></script>
+    <script>
+      var book = $('$mannaverse-reference').text();
+      $('#book').text(book);
+    </script>
 
   </body>
 </html>
