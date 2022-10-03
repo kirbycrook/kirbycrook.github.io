@@ -54,8 +54,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
    <script src="https://beta.ourmanna.com/api/v1/js/?order=random" type="text/javascript"></script>
     <script>
-      var book = $('$mannaverse-reference').text();
-      $('#book').text(book);
+      setTimeout(function() { 
+        var book = $('$mannaverse-reference').text();
+        $('#book').text(book);
+      }, 200);
+      
     </script>
 
   </body>
