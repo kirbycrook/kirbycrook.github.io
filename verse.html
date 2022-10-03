@@ -28,7 +28,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
 
-
+<style>
+ .body{
+   background: #4568DC;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  #bible{
+   font-family: 'FFSuperGroteskWebProMedium', 'Helvetica', 'Arial', sans-serif;
+   text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-size: 20px;
+  }
+  
+  @media(max-width: 767px){
+    #bible{
+      font-size: 16px;
+    }
+  }
+  
+  #book{
+   font-family: 'FFSuperGroteskWebProMedium', 'Helvetica', 'Arial', sans-serif;
+  }
+</style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
   <body>
@@ -40,8 +63,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="main">
       <div class="welcome-message">
-        <h1>Hi, my name is Kirby Crook. I'm a CRO Strategist at Elevar, driving growth for e-commerce brands like</h1>
-        <h3 id="book"></h3>
+        <h3 id="bible"></h3>
+        <h1 id="book">Hi, my name is Kirby Crook. I'm a CRO Strategist at Elevar, driving growth for e-commerce brands like</h1>
       </div>
      
     </div>
@@ -59,6 +82,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       $.get('https://beta.ourmanna.com/api/v1.json/?order=random',
           function(data){
             $('#book').html(data.verse.details.text);
+            $('#bible').html(data.verse.details.reference);
       });
 
 
