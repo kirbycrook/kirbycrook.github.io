@@ -74,7 +74,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="main">
       <div class="welcome-message">
         <h3 id="bible"></h3>
-        <h1 id="book">VERSE OF THE DAY</h1>
+        <h1 id="book">"<span id="verse">VERSE OF THE DAY</span>"</h1>
       </div>
      
     </div>
@@ -91,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var book = document.getElementById('book');
       $.get('https://beta.ourmanna.com/api/v1.json/?order=random',
           function(data){
-            $('#book').html('"' + data.verse.details.text '"');
+            $('#verse').html(data.verse.details.text);
             $('#bible').html(data.verse.details.reference);
       });
 
