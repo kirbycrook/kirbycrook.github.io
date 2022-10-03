@@ -56,12 +56,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
     $( document ).ready(function() {
       var book = document.getElementById('book');
+      $.get('https://beta.ourmanna.com/api/v1.json/?order=random',
+          function(data){
+            $('#book').html(data.verse.details.text);
+      });
 
-      fetch( 'https://beta.ourmanna.com/api/v1.json/?order=random' )
-		  .then( res => res.json() )
-		  .then( data => {
-			 book.text = data.verse.details.text;
-		 });
+
     });    
       	
       
