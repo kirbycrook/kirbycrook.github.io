@@ -60,7 +60,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       fetch( 'https://beta.ourmanna.com/api/v1.json/?order=random' )
 		  .then( res => res.json() )
 		  .then( data => {
-			 book.text = `${data.verse.details}`;
+			 book.text = ${data.verse.details.text};
 		 });
     });    
       	
