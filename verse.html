@@ -42,28 +42,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     letter-spacing: .25rem;
     font-size: 24px;
   }
-  
-  @media(max-width: 767px){
-    #bible{
-      font-size: 14px;
-    }
-    #book{
-     font-size: 22px;
-     line-height: 28px;
-     max-width: 330px; 
-    }
-  }
-  
   #book{
    font-family: 'FFSuperGroteskWebProMedium', 'Helvetica', 'Arial', sans-serif;
     max-width: 750px;
     font-size: 36px;
     line-height: 38px;
   }
+  
+  @media(max-width: 767px){
+    #bible{
+      font-size: 14px;
+    }
+    #book{
+     font-size: 24px;
+     line-height: 28px;
+     max-width: 330px; 
+    }
+  }
+  
+
 </style>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </head>
-  <body>
+  <body style="background: #4568DC; background: -webkit-linear-gradient(to right, #B06AB3, #4568DC) !important; background: linear-gradient(to right, #B06AB3, #4568DC) !important">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPZ3548"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -90,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       var book = document.getElementById('book');
       $.get('https://beta.ourmanna.com/api/v1.json/?order=random',
           function(data){
-            $('#book').html(data.verse.details.text);
+            $('#book').html('"' + data.verse.details.text '"');
             $('#bible').html(data.verse.details.reference);
       });
 
